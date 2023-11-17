@@ -1,12 +1,3 @@
-# opening the file in read mode 
-my_file = open("AdventOfCode\\2022\\1\input.txt", "r") 
-  
-# reading the file 
-data = my_file.read() 
-
-
-
-
 with open("AdventOfCode\\2022\\1\input.txt", 'r') as file:
     # Create an empty list to store the lines
     lines = []
@@ -21,14 +12,7 @@ with open("AdventOfCode\\2022\\1\input.txt", 'r') as file:
         else:
             caloryCount.append(caloryCounter)
             caloryCounter = 0
-    caloryCount.sort()
-    print(caloryCount[-1])
+file.close
 
-            #caloryCount[1] = line
-        # # Remove the newline character at the end of the line
-        # line = line.strip()
-
-        # # Append the line to the list
-        # lines.append(line)
-
-# Print the list of lines
+caloryCount.sort()
+print(caloryCount[-1])
